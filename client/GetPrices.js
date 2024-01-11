@@ -4,9 +4,9 @@ const {
 } = require("./AddressList");
 
 const {erc20ABI,factoryABI,pairABI,routerABI} = require("./AbiList");
-
+//"https://bsc-dataseed.binance.org/"
 const provider = new ethers.providers.JsonRpcProvider(
-    "https://bsc-dataseed.binance.org/"
+    "https://eth-mainnet.g.alchemy.com/v2/wrudut-xYQ5hNzETOcjl87kYu1Ajdkn-"
 )
 
 // console.log(provider,'provider')
@@ -39,5 +39,5 @@ const getPrices = async (amountInHuman) => {
     console.log(  amountOutHuman)
 };
 
-const amountnHuman = "500";
+const amountnHuman = "1";
 getPrices(amountnHuman)
